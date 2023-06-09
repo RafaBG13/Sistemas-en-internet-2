@@ -1,34 +1,87 @@
-#BA{
+ul {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+#BA {
     background-color: blue;
     color: white;
     width: 75px;
     height: 50px;
     border-radius: 5px;
-    border-style: none;;
+    border-style: none;
+    ;
 
 }
 
-#IA{
+#IA {
     width: 500px;
     height: 40px;
 }
 
-#EP{
+.EP {
     float: left;
     width: 50%;
 }
 
-.Completado{
+.Completado {
     float: left;
-    width: 50%;  
+    width: 50%;
 }
 
-#BP1{
-    background-color:darkgray;
+#BP1 {
+    background-color: darkgray;
     color: white;
     border-style: none;
     height: 20px;
     float: right;
     margin: 5px;
     border-radius: 4px;
+}
+
+#lista>li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+.acciones {
+    padding: 16px;
+    float: right;
+    border-radius: 8px;
+}
+
+.Completado>ul>li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.Titulos {
+    display: flex;
+    align-items: center;
+}
+
+.Titulos>h1 {
+    margin-right: 10px;
+}
+
+.acciones {
+    margin-left: auto;
+}
+
+
+.acciones button {
+    width: 72px;
+    margin-right: 5px;
+    background-color: darkgray;
+    color: white;
+    border-style: none;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.linea{
+    text-decoration: line-through;
 }

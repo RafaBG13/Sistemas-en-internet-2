@@ -16,29 +16,42 @@
         <input type="text" id="IA" placeholder="Ingrese una tarea">
         <button id="BA" onclick="addTask()">Agregar</button>
     </div>
-    <div id="EP">
+
+    <div class="EP">
         <h1>En proceso</h1>
-        <label>
-            <input type="checkbox">
-            Beber 2L de agua
-            <button id="BP1">Editar</button>
-            <button id="BP1">Eliminar</button>
-        </label><br>
-        <label>
-            <input type="checkbox">
-            Mandar documentos de beca
-            <button id="BP1">Editar</button>
-            <button id="BP1">Eliminar</button>
-        </label>
-    </div>
-    <div class="Completado">
-        <h1>Completado</h1>
-        <label>
-            <input type="checkbox">
-            Pagar netflix
-        </label>
+        <ul id="lista">
+            <li>
+                <input type="checkbox" onchange="completed(event)">
+                <p>Beber 2L de agua</p>
+                <div class="acciones">
+                    <button oneclick="editTask(event)">Editar</button>
+                    <button oneclick="deleteTask(event)">Eliminar</button>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" onchange="completed(event)">
+                <p>Mandar documentos de beca</p>
+                <div class="acciones">
+                    <button oneclick="editTask(event)">Editar</button>
+                    <button oneclick="deleteTask(event)">Eliminar</button>
+                </div>
+            </li>
+        </ul>
     </div>
 
+    <div class="Completado">
+        <div class="Titulos">
+            <h1>Completado</h1>
+            <spa onclick="clearList()">Limpiar lista</spa>
+        </div>
+
+        <ul id="LC">
+            <li>
+                <input type="checkbox" checked disabled>
+                <p class=" linea"> Pagar Netflix </p>
+            </li>
+        </ul>
+    </div>
 </body>
 
 </html>
